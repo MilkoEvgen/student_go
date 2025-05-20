@@ -10,14 +10,13 @@
 /bin/
 /build/
 /dist/
-/test
+test
 
 # Dependency directories (e.g. Go modules)
 vendor/
 
 # IDE
-.idea/
-.vscode/
+.idea
 
 # OS-specific
 .DS_Store
