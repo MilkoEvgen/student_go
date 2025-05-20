@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS students
+(
+    id    BIGSERIAL PRIMARY KEY,
+    name  TEXT NOT NULL UNIQUE,
+    email TEXT NOT NULL
+);

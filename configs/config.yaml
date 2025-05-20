@@ -1,0 +1,39 @@
+# Общие настройки
+server:
+  port: 8080  # Переопределяется через ENV (SERVER_PORT), если нужно
+
+# Настройки для dev
+dev:
+  server:
+    port: 8081
+  db:
+    host: "localhost"
+    port: 5432
+    name: "student"
+    user: "student"
+    password: "student"
+    sslmode: "disable"
+
+# Настройки для test
+test:
+  server:
+    port: 0  # Можно пусть выбирается случайный (или 8082)
+  db:
+    host: "localhost"
+    port: 5432
+    name: "test"
+    user: "test"
+    password: "test"
+    sslmode: "disable"
+
+# Настройки для prod
+prod:
+  server:
+    port: 8080
+  db:
+    host: "localhost"
+    port: 5432
+    name: "prod_db"
+    user: "prod_user"
+    password: "prod_pass"
+    sslmode: "disable"
